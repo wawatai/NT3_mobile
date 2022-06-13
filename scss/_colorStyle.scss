@@ -565,6 +565,20 @@ $slotGame_Word: #4d4d4d;
         background: linear-gradient(to top,#f3dba7 0%,#a08761 100%);
     }
 }
+@mixin checkEvent_2 {
+    background: linear-gradient(to bottom, #9ddbec 0%, #0282cc 50%, #82aeeb 100%);
+    border: solid 1px #0282cc;
+    border-radius: 1vw;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    font-size: 3.4vw;
+    margin-left: 5px;
+
+    &:active,&.active {
+        background: linear-gradient(to top, #9ddbec 0%, #0282cc 50%, #82aeeb 100%);
+    }
+}
 
 //大灰切換按鈕
 @mixin bigGrayBtn {
