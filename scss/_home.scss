@@ -9,6 +9,7 @@
     background: $mainBG_1;
     border-radius: 30px;
     box-shadow: 0 0 5px 2px #ede5d7;
+    flex-shrink: 0;
 
     .marquee_ic {
         display: block;
@@ -63,6 +64,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
 
     //大登入按鈕
     .loginBtn {
@@ -199,30 +201,33 @@
 //遊戲區
 .homeCenter {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
     padding: 0 15px 8px;
     margin-top: 8px;
+    overflow: hidden;
 
     //遊戲種類選單
     .gameList {
         width: auto;
-        height: auto;
+        height: 100%;
 
         ol {
             width: auto;
             height: 100%;
             @include gameListBG;
             overflow-y: auto;
+            flex-shrink: 0;
+            margin-right: 10px;
 
             li {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 24vw;
-                height: 20vw;
+                width: 98px;
+                height: 82px;
                 position: relative;
     
                 &::before {
@@ -234,6 +239,13 @@
                     width: 85%;
                     height: 1px;
                     background: $gameListBtn_Border;
+                }
+
+                &:last-child {
+
+                    &::before {
+                        display: none;
+                    }
                 }
     
                 &.active {
@@ -261,16 +273,16 @@
                     border-radius: 3px;
     
                     p {
-                        margin-top: 2vw;
-                        font-size: 3.4vw;
+                        margin-top: 8px;
+                        font-size: 14px;
                         font-weight: bold;
                         color: $gameListBtn_Word;
                     }
     
                     i {
                         display: block;
-                        width: 8vw;
-                        height: 8vw;
+                        width: 32px;
+                        height: 32px;
     
                         &.live_ic {
                             background-position-x: 20%;
@@ -300,8 +312,8 @@
     //遊戲選擇
     .gameBox {
         flex-wrap: wrap;
-        width: 65vw;
-        height: auto;
+        width: 100%;
+        height: 100%;
         display: none;
         overflow-y: auto;
 
@@ -314,10 +326,6 @@
             height: 45vw;
             position: relative;
             margin-bottom: 8vw;
-
-            &:nth-of-type(2n) {
-                margin-right: 0;
-            }
 
             p {
                 position: absolute;
