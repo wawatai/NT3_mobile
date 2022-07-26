@@ -364,6 +364,11 @@ header .content {
   background-size: contain;
 }
 
+.inviteWrap .qr {
+  background: url("../images/qrcode.png") no-repeat;
+  background-size: contain;
+}
+
 header .logo {
   width: 95px;
 }
@@ -433,6 +438,12 @@ header .logo {
 .eventWindow img {
   width: 100%;
   height: auto;
+}
+
+.inviteWrap img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -1002,8 +1013,8 @@ html body .homeCenter .gameList ol {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(36%, #ffffff), to(#f5f5f5));
   background: linear-gradient(to top, #ffffff 36%, #f5f5f5 100%);
   border: solid 1px #b69761;
-  -webkit-box-shadow: inset 1px 1px 3px 0 #ffffff, inset -2px -2px 3px 0 #5a5a5a80;
-          box-shadow: inset 1px 1px 3px 0 #ffffff, inset -2px -2px 3px 0 #5a5a5a80;
+  -webkit-box-shadow: inset 1px 1px 3px 0 #ffffff, inset -2px -2px 3px 0 rgba(90, 90, 90, 0.5019607843);
+          box-shadow: inset 1px 1px 3px 0 #ffffff, inset -2px -2px 3px 0 rgba(90, 90, 90, 0.5019607843);
   border-radius: 5px;
   overflow-y: auto;
   -ms-flex-negative: 0;
@@ -1198,7 +1209,7 @@ html body .filter {
   position: fixed;
   top: 0;
   left: 0;
-  background: #00000066;
+  background: rgba(0, 0, 0, 0.4);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2738,7 +2749,7 @@ html body .slotWrap .gameList {
   overflow-y: auto;
 }
 html body .slotWrap .gameList .gameBox {
-  width: calc((96vw - 30px)/2);
+  width: calc((96vw - 30px) / 2);
   height: 175px;
   margin: 0 1vw 8px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(67%, #fcfcfc), to(#d8d8d8));
@@ -2996,8 +3007,8 @@ html body .eventDetail .detailContent {
   margin-top: 10px;
   background: #ffffff;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0 5px 0 #c8c8c880;
-          box-shadow: 0 0 5px 0 #c8c8c880;
+  -webkit-box-shadow: 0 0 5px 0 rgba(200, 200, 200, 0.5019607843);
+          box-shadow: 0 0 5px 0 rgba(200, 200, 200, 0.5019607843);
 }
 html body .eventDetail .detailContent ul .title {
   width: 100%;
@@ -3085,8 +3096,8 @@ html body .walletWrap .walletBox .gradient .content {
   background: #ffffff;
   border: solid 1px #957222;
   border-radius: 5px;
-  -webkit-box-shadow: 0 10px 12px -2px #c8c8c880;
-          box-shadow: 0 10px 12px -2px #c8c8c880;
+  -webkit-box-shadow: 0 10px 12px -2px rgba(200, 200, 200, 0.5019607843);
+          box-shadow: 0 10px 12px -2px rgba(200, 200, 200, 0.5019607843);
 }
 html body .walletWrap .walletBox .gradient .content .amount {
   width: 100%;
@@ -4290,8 +4301,8 @@ html body .helpWrap .helpBody ul li {
           justify-content: center;
   background: #ffffff;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0 5px 0 #c8c8c880;
-          box-shadow: 0 0 5px 0 #c8c8c880;
+  -webkit-box-shadow: 0 0 5px 0 rgba(200, 200, 200, 0.5019607843);
+          box-shadow: 0 0 5px 0 rgba(200, 200, 200, 0.5019607843);
   margin-bottom: 15px;
   font-size: 14px;
   font-weight: bold;
@@ -4331,8 +4342,8 @@ html body .helpInner ul li .title {
   width: 92.27vw;
   height: 52px;
   background: #ffffff;
-  -webkit-box-shadow: 0 0 5px 0 #c8c8c880;
-          box-shadow: 0 0 5px 0 #c8c8c880;
+  -webkit-box-shadow: 0 0 5px 0 rgba(200, 200, 200, 0.5019607843);
+          box-shadow: 0 0 5px 0 rgba(200, 200, 200, 0.5019607843);
   border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4884,8 +4895,8 @@ html body .applyRecord .reviewBody .recordBox {
   margin-bottom: 10px;
   background: #ffffff;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0 5px 0 #c8c8c880;
-          box-shadow: 0 0 5px 0 #c8c8c880;
+  -webkit-box-shadow: 0 0 5px 0 rgba(200, 200, 200, 0.5019607843);
+          box-shadow: 0 0 5px 0 rgba(200, 200, 200, 0.5019607843);
   border: solid 1px #957222;
 }
 html body .applyRecord .reviewBody .recordBox.display {
@@ -5331,8 +5342,8 @@ html body .vipDetail .lvWrap .list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-shadow: 0 0 5px 0 #c8c8c880;
-          box-shadow: 0 0 5px 0 #c8c8c880;
+  -webkit-box-shadow: 0 0 5px 0 rgba(200, 200, 200, 0.5019607843);
+          box-shadow: 0 0 5px 0 rgba(200, 200, 200, 0.5019607843);
   border-radius: 5px;
   overflow: hidden;
   margin-bottom: 15px;
@@ -7038,8 +7049,8 @@ html body .transWrap .wallet {
   padding: 12px 15px 10px;
   border-radius: 5px;
   background: #ffffff;
-  -webkit-box-shadow: 0 0 5px 0 #c8c8c880;
-          box-shadow: 0 0 5px 0 #c8c8c880;
+  -webkit-box-shadow: 0 0 5px 0 rgba(200, 200, 200, 0.5019607843);
+          box-shadow: 0 0 5px 0 rgba(200, 200, 200, 0.5019607843);
   margin: 0 auto 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7381,8 +7392,8 @@ html body .withWrap .walletBox .gradient .content {
   margin: 25px auto 16px;
   background: #ffffff;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0 5px 0 #c8c8c880;
-          box-shadow: 0 0 5px 0 #c8c8c880;
+  -webkit-box-shadow: 0 0 5px 0 rgba(200, 200, 200, 0.5019607843);
+          box-shadow: 0 0 5px 0 rgba(200, 200, 200, 0.5019607843);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7780,4 +7791,87 @@ html body .withWrap .remindBox p.title {
 }
 html body .withWrap .remindBox p .sp {
   color: #e11515;
+}
+html body .inviteWrap {
+  width: 100%;
+  height: calc(100vh - 96px);
+  overflow-y: auto;
+  background: #f2f3f3;
+  padding-bottom: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html body .inviteWrap ul {
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+html body .inviteWrap ul li {
+  width: 100%;
+  height: 50px;
+  border-bottom: solid 1px #cccccc;
+  color: #9c8018;
+  font-size: 14px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html body .inviteWrap ul li.qrCode {
+  height: auto;
+  padding: 10px 16px;
+}
+html body .inviteWrap ul li p {
+  color: #000000;
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .inviteWrap ul li p button {
+  width: auto;
+  height: 28px;
+  background: #ffffff;
+  border: solid 1px #a7854d;
+  font-size: 13px;
+  font-weight: bold;
+  color: #a7854d;
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-left: 10px;
+}
+html body .inviteWrap ul li .qr {
+  width: 100px;
+  height: 100px;
+}
+html body .inviteWrap .imgBox {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+html body .inviteWrap .textBox {
+  width: 100%;
+  height: auto;
+  padding: 0 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html body .inviteWrap .textBox p {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+html body .inviteWrap .textBox p:last-child {
+  margin: 0;
 }
